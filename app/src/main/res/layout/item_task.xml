@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/task_item_cv_elevation"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAddTaskList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/task_list_action_color"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="@dimen/task_item_add_item_text_padding"
+            android:text="@string/action_add_list"
+            android:textColor="@color/bg2"
+            android:textSize="@dimen/task_item_add_item_text_size"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvAddTaskListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/task_item_cv_margin"
+            android:elevation="@dimen/task_item_cv_elevation"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/task_item_cv_corner_radius"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibCloseListName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:padding="@dimen/task_item_image_buttons_padding"
+                    android:src="@drawable/ic_cancel" />
+
+                <EditText
+                    android:id="@+id/etTaskListName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:autofillHints="@string/hint_list_name"
+                    android:hint="@string/hint_list_name"
+                    android:inputType="text" />
+
+                <ImageButton
+                    android:id="@+id/ibDoneListName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:padding="@dimen/task_item_image_buttons_padding"
+                    android:src="@drawable/ic_done" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/llTaskTtem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/task_list_action_color"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/llTitleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/task_list_title_view_bg_color"
+                android:elevation="@dimen/task_item_title_view_elevation"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tvTaskListTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/task_item_title_text_padding"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="@dimen/task_item_title_text_size"
+                    tools:text="Title" />
+
+                <ImageButton
+                    android:id="@+id/ibEditListName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:padding="@dimen/task_item_image_buttons_padding"
+                    android:src="@drawable/ic_edit" />
+
+                <ImageButton
+                    android:id="@+id/ibDeleteList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/image_contentDescription"
+                    android:padding="@dimen/task_item_image_buttons_padding"
+                    android:src="@drawable/ic_delete" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/task_item_divider_height"
+                android:background="@color/divider_color" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvEditTaskListName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/task_item_cv_margin"
+                android:elevation="@dimen/task_item_cv_elevation"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/task_item_cv_corner_radius"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ibCloseEditableView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/image_contentDescription"
+                        android:padding="@dimen/task_item_image_buttons_padding"
+                        android:src="@drawable/ic_cancel" />
+
+                    <EditText
+                        android:id="@+id/etEditTaskListName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autofillHints="@string/hint_list_name"
+                        android:hint="@string/hint_list_name"
+                        android:inputType="text" />
+
+                    <ImageButton
+                        android:id="@+id/ibDoneEditListName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/image_contentDescription"
+                        android:padding="@dimen/task_item_image_buttons_padding"
+                        android:src="@drawable/ic_done" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCardList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/task_item_rv_card_list_margin" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvAddCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/task_item_cv_margin"
+                android:elevation="@dimen/task_item_cv_elevation"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/task_item_cv_corner_radius"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/ibCloseCardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/image_contentDescription"
+                        android:padding="@dimen/task_item_image_buttons_padding"
+                        android:src="@drawable/ic_cancel" />
+
+                    <EditText
+                        android:id="@+id/etCardName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:autofillHints="@string/hint_card_name"
+                        android:hint="@string/hint_card_name"
+                        android:inputType="text" />
+
+                    <ImageButton
+                        android:id="@+id/ibDoneCardName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:contentDescription="@string/image_contentDescription"
+                        android:padding="@dimen/task_item_image_buttons_padding"
+                        android:src="@drawable/ic_done" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvAddCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/task_list_action_color"
+                android:elevation="@dimen/task_item_add_card_text_elevation"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="@dimen/task_item_add_item_text_padding"
+                android:text="@string/action_add_card"
+                android:textColor="@color/bg2"
+                android:textSize="@dimen/task_item_add_item_text_size"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

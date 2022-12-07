@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="accent">#0C90F1</color>
+
+
+    <color name="bg1">#ffba08</color>
+    <color name="bg2">#faa307</color>
+    <color name="bg3">#f48c06</color>
+    <color name="bg4">#e85d04</color>
+    <color name="bg5">#dc2f02</color>
+    <color name="bg6">#d00000</color>
+    <color name="bg7">#9d0208</color>
+    <color name="bg8">#6a040f</color>
+    <color name="bg9">#370617</color>
+    <color name="bg10">#03071e</color>
+
+    <color name="divider_color">#eaeaea</color>
+
+    <color name="primary_text_color">#03071e</color>
+    <color name="secondary_text_color">#6D6A6B</color>
+
+    <color name="snackbar_error_color">#9d0208</color>
+
+    <color name="task_list_action_color">#F7F6FA</color>
+    <color name="task_list_title_view_bg_color">#F8F8F8</color>
+</resources>
+

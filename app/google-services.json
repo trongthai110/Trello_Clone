@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "134511368082",
+    "project_id": "thailo-e7264",
+    "storage_bucket": "thailo-e7264.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134511368082:android:e045f895d5c093160b934b",
+        "android_client_info": {
+          "package_name": "ndtt.trelloclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134511368082-b96gga1a4vla01d2l9jt6du12a2566k7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHU7TAE_4KBUXEHW7WUTvwD6pX3ax8w_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134511368082-b96gga1a4vla01d2l9jt6du12a2566k7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
